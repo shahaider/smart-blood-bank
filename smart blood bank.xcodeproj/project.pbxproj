@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88369A15C69CBCA46BB715A3 /* Pods_smart_blood_bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AA165B4AB47D5171723BA5 /* Pods_smart_blood_bank.framework */; };
+		F2017FBC1EBCACAD003A6744 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2017FBB1EBCACAC003A6744 /* TableViewCell.swift */; };
+		F2017FBE1EBCAF3C003A6744 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2017FBD1EBCAF3C003A6744 /* signinViewController.swift */; };
+		F2017FC01EBCC9B0003A6744 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2017FBF1EBCC9B0003A6744 /* User.swift */; };
+		F22F631D1EC5B1C400DA042D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F631C1EC5B1C400DA042D /* Main.storyboard */; };
+		F2AB2FE31EBB5FF700DDE23B /* testingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */; };
+		F2AB2FE51EBB642400DDE23B /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB2FE41EBB642400DDE23B /* signupViewController.swift */; };
+		F2B394F91EBB3CF100566EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B394F81EBB3CF100566EF7 /* AppDelegate.swift */; };
+		F2B394FB1EBB3CF100566EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B394FA1EBB3CF100566EF7 /* ViewController.swift */; };
+		F2B395001EBB3CF100566EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B394FF1EBB3CF100566EF7 /* Assets.xcassets */; };
+		F2B395031EBB3CF100566EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B395011EBB3CF100566EF7 /* LaunchScreen.storyboard */; };
+		F2B3950B1EBB3D4D00566EF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2B3950A1EBB3D4D00566EF7 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11AA165B4AB47D5171723BA5 /* Pods_smart_blood_bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smart_blood_bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923DA752F9AA46B66ED86DD0 /* Pods-smart blood bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart blood bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smart blood bank/Pods-smart blood bank.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF13F47CAAB269AB54D07E9 /* Pods-smart blood bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smart blood bank.release.xcconfig"; path = "Pods/Target Support Files/Pods-smart blood bank/Pods-smart blood bank.release.xcconfig"; sourceTree = "<group>"; };
+		F2017FBB1EBCACAC003A6744 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F2017FBD1EBCAF3C003A6744 /* signinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
+		F2017FBF1EBCC9B0003A6744 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F22F631C1EC5B1C400DA042D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testingViewController.swift; sourceTree = "<group>"; };
+		F2AB2FE41EBB642400DDE23B /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		F2B394F51EBB3CF100566EF7 /* smart blood bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart blood bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B394F81EBB3CF100566EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2B394FA1EBB3CF100566EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2B394FF1EBB3CF100566EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B395021EBB3CF100566EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2B395041EBB3CF100566EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B3950A1EBB3D4D00566EF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B394F21EBB3CF000566EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88369A15C69CBCA46BB715A3 /* Pods_smart_blood_bank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67848E85E4F9B55857C67C48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				923DA752F9AA46B66ED86DD0 /* Pods-smart blood bank.debug.xcconfig */,
+				CCF13F47CAAB269AB54D07E9 /* Pods-smart blood bank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5C101D7582F61897BF26865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11AA165B4AB47D5171723BA5 /* Pods_smart_blood_bank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2B394EC1EBB3CF000566EF7 = {
+			isa = PBXGroup;
+			children = (
+				F2B394F71EBB3CF100566EF7 /* smart blood bank */,
+				F2B394F61EBB3CF100566EF7 /* Products */,
+				67848E85E4F9B55857C67C48 /* Pods */,
+				C5C101D7582F61897BF26865 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2B394F61EBB3CF100566EF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B394F51EBB3CF100566EF7 /* smart blood bank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B394F71EBB3CF100566EF7 /* smart blood bank */ = {
+			isa = PBXGroup;
+			children = (
+				F2B394F81EBB3CF100566EF7 /* AppDelegate.swift */,
+				F2B394FA1EBB3CF100566EF7 /* ViewController.swift */,
+				F2017FBD1EBCAF3C003A6744 /* signinViewController.swift */,
+				F2AB2FE41EBB642400DDE23B /* signupViewController.swift */,
+				F2017FBB1EBCACAC003A6744 /* TableViewCell.swift */,
+				F2B394FF1EBB3CF100566EF7 /* Assets.xcassets */,
+				F22F631C1EC5B1C400DA042D /* Main.storyboard */,
+				F2B395011EBB3CF100566EF7 /* LaunchScreen.storyboard */,
+				F2B395041EBB3CF100566EF7 /* Info.plist */,
+				F2B3950A1EBB3D4D00566EF7 /* GoogleService-Info.plist */,
+				F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */,
+				F2017FBF1EBCC9B0003A6744 /* User.swift */,
+			);
+			path = "smart blood bank";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2B394F41EBB3CF000566EF7 /* smart blood bank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B395071EBB3CF100566EF7 /* Build configuration list for PBXNativeTarget "smart blood bank" */;
+			buildPhases = (
+				903087EC4D12F6ADD464E561 /* [CP] Check Pods Manifest.lock */,
+				F2B394F11EBB3CF000566EF7 /* Sources */,
+				F2B394F21EBB3CF000566EF7 /* Frameworks */,
+				F2B394F31EBB3CF000566EF7 /* Resources */,
+				B57DBAAFBA8C736C277030A1 /* [CP] Embed Pods Frameworks */,
+				1F99E282F483374855861271 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smart blood bank";
+			productName = "smart blood bank";
+			productReference = F2B394F51EBB3CF100566EF7 /* smart blood bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2B394ED1EBB3CF000566EF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Syed Shahrukh Haider";
+				TargetAttributes = {
+					F2B394F41EBB3CF000566EF7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F2B394F01EBB3CF000566EF7 /* Build configuration list for PBXProject "smart blood bank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2B394EC1EBB3CF000566EF7;
+			productRefGroup = F2B394F61EBB3CF100566EF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2B394F41EBB3CF000566EF7 /* smart blood bank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2B394F31EBB3CF000566EF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B395031EBB3CF100566EF7 /* LaunchScreen.storyboard in Resources */,
+				F2B3950B1EBB3D4D00566EF7 /* GoogleService-Info.plist in Resources */,
+				F2B395001EBB3CF100566EF7 /* Assets.xcassets in Resources */,
+				F22F631D1EC5B1C400DA042D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F99E282F483374855861271 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smart blood bank/Pods-smart blood bank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		903087EC4D12F6ADD464E561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B57DBAAFBA8C736C277030A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smart blood bank/Pods-smart blood bank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2B394F11EBB3CF000566EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2017FBE1EBCAF3C003A6744 /* signinViewController.swift in Sources */,
+				F2017FBC1EBCACAD003A6744 /* TableViewCell.swift in Sources */,
+				F2B394FB1EBB3CF100566EF7 /* ViewController.swift in Sources */,
+				F2B394F91EBB3CF100566EF7 /* AppDelegate.swift in Sources */,
+				F2AB2FE51EBB642400DDE23B /* signupViewController.swift in Sources */,
+				F2AB2FE31EBB5FF700DDE23B /* testingViewController.swift in Sources */,
+				F2017FC01EBCC9B0003A6744 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2B395011EBB3CF100566EF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B395021EBB3CF100566EF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2B395051EBB3CF100566EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2B395061EBB3CF100566EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2B395081EBB3CF100566EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923DA752F9AA46B66ED86DD0 /* Pods-smart blood bank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "smart blood bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.smart-blood-bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F2B395091EBB3CF100566EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF13F47CAAB269AB54D07E9 /* Pods-smart blood bank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "smart blood bank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.perception.smart-blood-bank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2B394F01EBB3CF000566EF7 /* Build configuration list for PBXProject "smart blood bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B395051EBB3CF100566EF7 /* Debug */,
+				F2B395061EBB3CF100566EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B395071EBB3CF100566EF7 /* Build configuration list for PBXNativeTarget "smart blood bank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B395081EBB3CF100566EF7 /* Debug */,
+				F2B395091EBB3CF100566EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2B394ED1EBB3CF000566EF7 /* Project object */;
+}
