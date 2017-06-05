@@ -22,7 +22,10 @@ class signinViewController: UIViewController,UITableViewDataSource, UITableViewD
     var signinName : String!
     var actAs : String!
     var finalList = [User]()
+    
  
+    @IBOutlet weak var labelText: UILabel!
+    
     
     
     
@@ -32,9 +35,9 @@ class signinViewController: UIViewController,UITableViewDataSource, UITableViewD
         ref = FIRDatabase.database().reference()
         dbHandler = ref?.child("Record").observe(.childAdded, with: { (snapshoot) in
             let post = snapshoot.value as? [String:String]
-//            
-//            print("check")
-//            print(post!)
+
+            
+            self.labelText.text = User.loginUser.category + " Section"
             
             if let actualPost = post {
               
@@ -49,19 +52,15 @@ class signinViewController: UIViewController,UITableViewDataSource, UITableViewD
                 let info: User = User(name: name, age: age, category: category, blood: blood)
                 
 //                
-//                if info.category != User.loginUser.category{
+                if info.category != User.loginUser.category{
                 
                     User.filteredUsers.append(info)
-//                }
+                }
                
-            // filter by suited blood type
-            
-        
-                
             }
-             print(User.filteredUsers)
-//            self.matchBlood()
-              self.dataTable.reloadData()
+            // filter by suited blood type
+            self.matchBlood()
+            self.dataTable.reloadData()
         
         })
         
@@ -88,15 +87,15 @@ class signinViewController: UIViewController,UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         
-        cell.nameCell.text = User.filteredUsers[indexPath.row].name
-        cell.ageCell.text = User.filteredUsers[indexPath.row].age
-        cell.categoryCell.text = User.filteredUsers[indexPath.row].category
-        cell.bloodCell.text = User.filteredUsers[indexPath.row].blood
+//        cell.nameCell.text = User.filteredUsers[indexPath.row].name
+//        cell.ageCell.text = User.filteredUsers[indexPath.row].age
+//        cell.categoryCell.text = User.filteredUsers[indexPath.row].category
+//        cell.bloodCell.text = User.filteredUsers[indexPath.row].blood
 
-//        cell.nameCell.text = finalList[indexPath.row].name
-//        cell.ageCell.text = finalList[indexPath.row].age
-//        cell.categoryCell.text = finalList[indexPath.row].category
-//        cell.bloodCell.text = finalList[indexPath.row].blood
+        cell.nameCell.text = finalList[indexPath.row].name
+        cell.ageCell.text = finalList[indexPath.row].age
+        cell.categoryCell.text = finalList[indexPath.row].category
+        cell.bloodCell.text = finalList[indexPath.row].blood
         
         
     return cell
@@ -108,25 +107,23 @@ class signinViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
    
     
-    // match detail function
+                                                // match detail function
     func matchBlood(){
     let uBlood = User.loginUser.blood
     let list = User.filteredUsers
-//        print(list)
-        
-        /* 
-DONOTE TO:
+        print (list)
 
-        */
- 
- 
+                                            // Category = DONOR
+
+ if User.loginUser.category == "Donor"
+ {
         switch uBlood {
         
 //  O+ == AB+,A+, B+, O+
         case  "O+":
             for loop in list{
 //               print(loop)
-                if (loop.blood == "AB+") || (loop.blood == "A+") || (loop.blood == "B+") || (loop.blood == "O+") {
+                if (loop.blood == "AB+" ) || (loop.blood == "A+" ) || (loop.blood == "B+") || (loop.blood == "O+") {
                         self.finalList.append(loop)
                     
                 }
@@ -184,7 +181,7 @@ DONOTE TO:
             print(list)
             for loop in list{
                 
-                if loop.blood == "AB+"  {
+                if (loop.blood == "AB+")  {
                     self.finalList.append(loop)
                 }
                
@@ -195,5 +192,74 @@ DONOTE TO:
             finalList = list
         }
     
+    }
+                                            // category = Recipient
+ else {
+    switch uBlood {
+        
+        //  O- = O-
+    case "O-":
+        for loop in list{
+            if loop.blood == "O-"{
+            self.finalList.append(loop)
+            }
+        }
+        
+    // O+ = O- ,O+
+    case "O+":
+        for loop in list{
+            if (loop.blood == "O+") || (loop.blood == "O-"){
+                self.finalList.append(loop)
+            }
+        }
+        
+    // A- = O-,A-
+    case "A-":
+        for loop in list{
+            if (loop.blood == "O-") || (loop.blood == "A-"){
+                self.finalList.append(loop)
+            }
+        }
+       
+    // A+ = O-,O+,A-,A+
+    case "A+":
+        for loop in list{
+            if (loop.blood == "A+") || (loop.blood == "A-") || (loop.blood == "O+") || (loop.blood == "O-"){
+                self.finalList.append(loop)
+            }
+        }
+        
+        
+    // B- = 0-, B-
+    case "B-":
+        for loop in list{
+           if (loop.blood == "O-") || (loop.blood == "B-"){
+                self.finalList.append(loop)
+            }
+        }
+        
+        
+    // B+ = O-,O+,B-, B+
+    case "B+":
+        for loop in list{
+             if (loop.blood == "B+") || (loop.blood == "B-") || (loop.blood == "O+") || (loop.blood == "O-"){
+                self.finalList.append(loop)
+            }
+        }
+        
+    // AB- = 0-,A-,B-,AB-
+    case "AB-":
+        for loop in list{
+             if (loop.blood == "AB-") || (loop.blood == "A-") || (loop.blood == "B-") || (loop.blood == "O-"){
+                self.finalList.append(loop)
+            }
+        }
+        
+    // AB+ = ALL
+    default:
+        finalList = list
+    }
+        }
+        
     }
 }

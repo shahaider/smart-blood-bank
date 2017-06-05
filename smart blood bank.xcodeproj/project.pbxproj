@@ -14,6 +14,7 @@
 		F22F631D1EC5B1C400DA042D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F631C1EC5B1C400DA042D /* Main.storyboard */; };
 		F2AB2FE31EBB5FF700DDE23B /* testingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */; };
 		F2AB2FE51EBB642400DDE23B /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB2FE41EBB642400DDE23B /* signupViewController.swift */; };
+		F2B1E6EE1EE55BC70073B888 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1E6ED1EE55BC70073B888 /* customButton.swift */; };
 		F2B394F91EBB3CF100566EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B394F81EBB3CF100566EF7 /* AppDelegate.swift */; };
 		F2B394FB1EBB3CF100566EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B394FA1EBB3CF100566EF7 /* ViewController.swift */; };
 		F2B395001EBB3CF100566EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B394FF1EBB3CF100566EF7 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		F22F631C1EC5B1C400DA042D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testingViewController.swift; sourceTree = "<group>"; };
 		F2AB2FE41EBB642400DDE23B /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		F2B1E6ED1EE55BC70073B888 /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		F2B394F51EBB3CF100566EF7 /* smart blood bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smart blood bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B394F81EBB3CF100566EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B394FA1EBB3CF100566EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F2B3950A1EBB3D4D00566EF7 /* GoogleService-Info.plist */,
 				F2AB2FE21EBB5FF600DDE23B /* testingViewController.swift */,
 				F2017FBF1EBCC9B0003A6744 /* User.swift */,
+				F2B1E6ED1EE55BC70073B888 /* customButton.swift */,
 			);
 			path = "smart blood bank";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				F2017FBC1EBCACAD003A6744 /* TableViewCell.swift in Sources */,
 				F2B394FB1EBB3CF100566EF7 /* ViewController.swift in Sources */,
 				F2B394F91EBB3CF100566EF7 /* AppDelegate.swift in Sources */,
+				F2B1E6EE1EE55BC70073B888 /* customButton.swift in Sources */,
 				F2AB2FE51EBB642400DDE23B /* signupViewController.swift in Sources */,
 				F2AB2FE31EBB5FF700DDE23B /* testingViewController.swift in Sources */,
 				F2017FC01EBCC9B0003A6744 /* User.swift in Sources */,
